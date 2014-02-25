@@ -38,13 +38,15 @@ Tagformula::Parser matches arrays of strings against formulas which require the 
     formula.matches?(%w[alpha beta])  # => false
     formula.matches?(%w[alpha gamma]) # => true
 
-Operators:
+### Operators:
 
 expr & expr   requires both expressions to be present
+
 expr | expr   requires either expression to be present
+
 expr1 & ! expr2 requires the expr1 to be present and expr2 to be absent.
 
-Special words: 
+### Special words: 
 
 "true" and "yes" will always match as true.   
 

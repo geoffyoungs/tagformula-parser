@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["git@intersect-uk.co.uk"]
   spec.summary       = %q{Simple formula parser & matcher}
   spec.description   = %q{Match tag formulas with simple boolean operations against lists of strings.  e.g. the formula "foo & ! bar" would match ['foo'], but not ['foo', 'bar'] }
-  spec.homepage      = ""
+  spec.homepage      = "http://github.com/geoffyoungs/tagformula-parser"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
@@ -19,6 +19,6 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.5"
-  spec.add_development_dependency "rake"
-  spec.add_development_dependency "rspec", "~> 2.14.1"
+  spec.add_development_dependency "rake", '~> 10.1'
+  spec.add_development_dependency "rspec", "~> 2.14"
 end
